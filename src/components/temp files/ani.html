@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trusted by Over Million Users Section</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .trusted-logos-section {
+            margin: 60px auto 0 auto;
+            max-width: 1200px;
+            text-align: center;
+            padding: 0 30px 30px 30px;
+        }
+
+        .trusted-logos-heading {
+            color: #292b51;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-bottom: 38px;
+            margin-top: 0;
+        }
+
+        .trusted-logos-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-bottom: 34px;
+        }
+
+        .trusted-logo {
+            max-height: 44px;
+            max-width: 130px;
+            filter: grayscale(100%) brightness(0.98) opacity(0.5);
+            opacity: 0.53;
+            transition: filter 0.4s cubic-bezier(.4, 0, .2, 1), opacity 0.4s cubic-bezier(.4, 0, .2, 1),
+                transform 0.24s cubic-bezier(.4, 0, .2, 1), box-shadow 0.24s cubic-bezier(.4, 0, .2, 1);
+            cursor: pointer;
+            will-change: filter, opacity, transform, box-shadow;
+            background: #fff;
+            border-radius: 6px;
+        }
+
+        .trusted-logo:hover,
+        .trusted-logo:focus {
+            filter: grayscale(0%) brightness(1) opacity(1);
+            opacity: 1;
+            transform: scale(1.09);
+            box-shadow: 0 6px 20px 0 rgba(50, 90, 140, 0.07);
+            z-index: 2;
+        }
+
+        .trusted-divider {
+            border: none;
+            border-top: 1px solid #c6c7d8;
+            width: 99%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 600px) {
+            .trusted-logos-row {
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                margin-bottom: 24px;
+            }
+
+            .trusted-logos-marquee {
+                display: flex;
+                width: max-content;
+                animation: scroll-logos 17s linear infinite;
+                gap: 16px;
+            }
+
+            /* Make logos a suitable mobile size */
+            .trusted-logo {
+                max-width: 56px;
+                max-height: 22px;
+                margin: 0 3px;
+            }
+
+            @keyframes scroll-logos {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="trusted-logos-section">
+        <div class="trusted-logos-heading">TRUSTED BY OVER MILLION USERS</div>
+        <div class="trusted-logos-row">
+            <div class="trusted-logos-marquee">
+                <img class="trusted-logo"
+                    src="https://1000logos.net/wp-content/uploads/2022/08/Ola-Cabs-Logo-500x281.png" alt="OLA" />
+                <img class="trusted-logo" src="https://seeklogo.com/images/Z/zoomcar-logo-597C12FADF-seeklogo.com.png"
+                    alt="Zoomcar" />
+                <img class="trusted-logo"
+                    src="https://companieslogo.com/img/orig/RIVIGO.NS_BIG-135322c1.png?t=1633510091" alt="RIVIGO" />
+                <img class="trusted-logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Shadowfax_logo.svg/2560px-Shadowfax_logo.svg.png"
+                    alt="Shadowfax" />
+                <img class="trusted-logo" src="https://basic.vc/wp-content/uploads/2022/03/basic_logo.png"
+                    alt="BASIC" />
+                <img class="trusted-logo"
+                    src="https://media.licdn.com/dms/image/C560BAQGGYx__v52eAA/company-logo_200_200/0/1630553509599/module_innovations_logo?e=2147483647&v=beta&t=43lMtr5ijCtI0osuGYpcPC28Lt2vOxA-WCzsRU2j14Y"
+                    alt="Module Innovations" />
+                <img class="trusted-logo" src="https://vekariahealthcare.com/wp-content/uploads/2022/11/Logo-vector.png"
+                    alt="Vekaria Healthcare" />
+                <img class="trusted-logo" src="https://jodopay.com/wp-content/themes/jodo/assets/img/logo.svg"
+                    alt="JODO" />
+                <img class="trusted-logo"
+                    src="https://seeklogo.com/images/S/springrole-logo-4EE84B5659-seeklogo.com.png" alt="SpringRole" />
+            </div>
+        </div>
+        <hr class="trusted-divider" />
+    </section>
+</body>
+
+</html>
