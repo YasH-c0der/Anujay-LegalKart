@@ -6,6 +6,14 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Tbm from '../components/Sections/Tbm';
+import one from '../assets/stock/1.webp';
+import two from '../assets/stock/2.webp';
+import three from '../assets/stock/3.webp';
+import four from '../assets/stock/4.jpg'
+import five from '../assets/stock/5.avif'
+import six from '../assets/stock/6.avif'
+import seven from '../assets/stock/7.webp'
+
 
 const Home = () => {
   const testimonials = [
@@ -258,7 +266,7 @@ const Home = () => {
                 <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300">
                   <div className="aspect-w-16 aspect-h-9 bg-gray-100">
                     <img
-                      src="https://via.placeholder.com/300x180?text=Online+Lawyer+Consultation"
+                      src={one}
                       alt="Online Lawyer Consultation"
                       className="w-full h-48 object-cover"
                     />
@@ -283,7 +291,7 @@ const Home = () => {
                 <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300">
                   <div className="aspect-w-16 aspect-h-9 bg-gray-100">
                     <img
-                      src="https://via.placeholder.com/300x180?text=Sale+Agreement"
+                      src={two}
                       alt="Sale Agreement"
                       className="w-full h-48 object-cover"
                     />
@@ -308,7 +316,7 @@ const Home = () => {
                 <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300">
                   <div className="aspect-w-16 aspect-h-9 bg-gray-100">
                     <img
-                      src="https://via.placeholder.com/300x180?text=Agreement+to+Sale"
+                      src={three}
                       alt="Agreement to Sale"
                       className="w-full h-48 object-cover"
                     />
@@ -333,7 +341,7 @@ const Home = () => {
                 <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300">
                   <div className="aspect-w-16 aspect-h-9 bg-gray-100">
                     <img
-                      src="https://via.placeholder.com/300x180?text=Trademark"
+                      src={four}
                       alt="Trademark"
                       className="w-full h-48 object-cover"
                     />
@@ -379,7 +387,9 @@ const Home = () => {
                 <SwiperSlide key={testimonial.id}>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
                     <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 rounded-full bg-gray-200 mr-4" />
+                      <div className="w-12 h-12 rounded-full bg-gray-200 mr-4">
+                        {/* <img src={five} alt="five" /> */}
+                         </div>
                       <div>
                         <h4 className="font-semibold text-primary">{testimonial.name}</h4>
                         <p className="text-xs text-gray-500">{testimonial.role}</p>
