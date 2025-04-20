@@ -7,7 +7,7 @@ import basic from "../../assets/logos/basic.png";
 import moduleInnovations from "../../assets/logos/moduleinnovation.png";
 import vekariaHealthcare from "../../assets/logos/vekaria.png";
 import jodo from "../../assets/logos/jodo.png";
-import springRole from "../../assets/logos/springRole.png";
+import springRole from "../../assets/logos/springrole.png";
 
 function Tbm() {
   return (
