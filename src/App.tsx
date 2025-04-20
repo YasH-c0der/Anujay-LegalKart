@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Layout Components
-import Header from './components/layout/LegalKartNav';
+import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 
 // Pages
@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <div className="font-poppins">
-        <Header />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/property" element={<Property />} />
