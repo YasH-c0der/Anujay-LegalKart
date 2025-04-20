@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Tbm from '../components/Sections/Tbm';
+import hero from '../assets/images/hero-image.jpg'
 import one from '../assets/stock/1.webp';
 import two from '../assets/stock/2.webp';
 import three from '../assets/stock/3.webp';
@@ -55,7 +56,7 @@ const Home = () => {
       <section className="relative py-20 bg-primary text-white overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="/src/assets/images/hero-image.jpg"
+            src={hero}
             alt="Legal Consultation"
             className="w-full h-full object-cover"
           />
