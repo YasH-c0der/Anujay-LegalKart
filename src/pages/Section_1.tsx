@@ -19,7 +19,7 @@ function Section_1() {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 48px;
+            gap: 248px;
             padding: 64px 24px;
             background: #fff;
             max-width: 1200px;
