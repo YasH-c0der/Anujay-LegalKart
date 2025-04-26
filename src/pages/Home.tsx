@@ -14,6 +14,8 @@ import four from '../assets/stock/4.jpg'
 import five from '../assets/stock/5.avif'
 import six from '../assets/stock/6.avif'
 import seven from '../assets/stock/7.webp'
+import Section_1 from './section_1';
+import Section_2 from './section_2';
 
 
 const Home = () => {
@@ -161,7 +163,7 @@ const Home = () => {
             </div>
 
             {/* Service Card 3 */}
-            <div className="bg-[#F5F4FA] rounded-lg p-6 shadow-sm hover:shadow-xl hover:bg-[#fff] transition duration-700">
+            {/* <div className="bg-[#F5F4FA] rounded-lg p-6 shadow-sm hover:shadow-xl hover:bg-[#fff] transition duration-700">
               <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
@@ -185,7 +187,7 @@ const Home = () => {
                   Get Status
                 </button>
               </div>
-            </div>
+            </div> */}
 
             {/* Service Card 4 */}
             <div className="bg-[#F5F4FA] rounded-lg p-6 shadow-sm hover:shadow-xl hover:bg-[#fff] transition duration-700">
@@ -223,8 +225,12 @@ const Home = () => {
         </div>
       </section>
 
+        <Section_1 />
+
+        <Section_2 />
+
       {/* Stats Section */}
-      <section className="bg-secondary text-white py-10">
+      <section className="bg-black text-white py-10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div>
@@ -411,7 +417,7 @@ const Home = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-primary text-white">
+      <section className="py-16 bg-black text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
@@ -467,7 +473,7 @@ const Home = () => {
       </section>
 
       {/* Partners Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-primary text-center">Our Partners</h2>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
@@ -485,7 +491,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

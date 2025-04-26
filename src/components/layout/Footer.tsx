@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from 'react-
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white pt-12 pb-6">
+    <footer className="bg-black text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
         {/* Footer Top */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
