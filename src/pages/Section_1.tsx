@@ -74,7 +74,7 @@ function Section_1() {
 
         .consult-btn {
             width: 60%;
-            background: #fde047;
+            background: #F5EB9A;
             color: #18181b;
             font-size: 1.2rem;
             font-weight: 700;
@@ -87,7 +87,7 @@ function Section_1() {
         }
 
         .consult-btn:hover {
-            background: #facc15;
+            background: ##FDE047;
             transform: translateY(-2px) scale(1.03);
         }
 
@@ -143,6 +143,9 @@ function Section_1() {
             .hero_1 {
                 padding: 28px 2vw;
                 gap: 16px;
+                flex-direction: row;
+                gap: 40px;
+
             }
 
             .hero_1-image .circle {
@@ -151,17 +154,23 @@ function Section_1() {
             }
 
             .hero_1-image img {
-                width: 90px;
-                height: 120px;
+                width: 115px;
+                height: 169px;
+                padding-bottom: 31px;
+            }
+            .hero_1-content{
+            min-width: 154px;
             }
 
             .hero_1-content h1 {
                 font-size: 1.19rem;
+                margin-bottom: 14px;
             }
 
             .consult-btn {
-                padding: 10px 24px;
-                font-size: 1rem;
+                padding: 6px 0px;
+                font-size: 0.7rem;
+                width: default;
             }
         }
 

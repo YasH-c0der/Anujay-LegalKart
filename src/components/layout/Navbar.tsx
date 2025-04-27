@@ -74,16 +74,19 @@ const Navbar = () => {
   };
 
   // Active style for NavLink
-  const activeStyle = "text-[#33b5bb]";
+  const activeStyle = "text-secondary";
   const navLinkClasses = ({ isActive }: { isActive: boolean }) => `
-    hover:text-[#33b5bb] font-medium transition-colors
+    hover:text-secondary font-medium transition-colors
     ${isActive ? activeStyle : isScrolled ? "text-[#2b2b50]" : "text-white"}
   `;
 
   return (
     <>
       <header
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-[#07070d]"}`}
+        className={`fixed top-0 w-full z-50 transition-all duration-300
+          
+          ${isScrolled ? "bg-white shadow-md" : "bg-[#07070d]"}
+          `}
       >
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
@@ -108,7 +111,7 @@ const Navbar = () => {
               </NavLink>
               <div className="relative group">
                 <button
-                  className={`hover:text-[#33b5bb] font-medium flex items-center ${isScrolled ? "text-[#2b2b50]" : "text-white"}`}
+                  className={`hover:text-secondary font-medium flex items-center ${isScrolled ? "text-[#2b2b50]" : "text-white"}`}
                 >
                   Legal Advice
                   <svg
@@ -151,7 +154,7 @@ const Navbar = () => {
               </div>
               <div className="relative group">
                 <button
-                  className={`hover:text-[#33b5bb] font-medium flex items-center ${isScrolled ? "text-[#2b2b50]" : "text-white"}`}
+                  className={`hover:text-secondary font-medium flex items-center ${isScrolled ? "text-[#2b2b50]" : "text-white"}`}
                 >
                   Documents
                   <svg
@@ -201,13 +204,13 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-4">
               <Link
                 to="/talk-to-lawyer"
-                className="bg-[#33b5bb] text-white px-4 py-2 rounded-md hover:bg-[#2a9499] transition-colors"
+                className="bg-secondary text-black px-4 py-2 rounded-md transition-colors"
               >
                 Talk to Lawyer
               </Link>
               <Link
                 to="/login"
-                className={`hover:text-[#33b5bb] ${isScrolled ? "text-[#2b2b50]" : "text-white"}`}
+                className={`hover:text-secondary ${isScrolled ? "text-[#2b2b50]" : "text-white"}`}
               >
                 Login
               </Link>
@@ -399,7 +402,7 @@ const Navbar = () => {
               <div className="flex flex-col space-y-3 p-4">
                 <Link
                   to="/talk-to-lawyer"
-                  className="bg-[#33b5bb] text-white py-3 rounded-md text-center hover:bg-[#2a9499] transition-colors"
+                  className="bg-secondary text-black py-3 rounded-md text-center transition-colors"
                 >
                   Talk to Lawyer
                 </Link>

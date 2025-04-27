@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Tbm from '../components/Sections/Tbm';
-import hero from '../assets/images/hero-image.jpg'
+import hero from '../assets/images/nav_img.png'
 import one from '../assets/stock/1.webp';
 import two from '../assets/stock/2.webp';
 import three from '../assets/stock/3.webp';
@@ -53,14 +53,14 @@ const Home = () => {
   ];
 
   return (
-    <main>
+    <>
       {/* Hero Section */}
-      <section className="relative py-20 bg-primary text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+      <section className="relative py-32 bg-primary text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-60">
           <img
             src={hero}
             alt="Legal Consultation"
-            className="w-full h-full object-cover"
+            className="w-full h-[226%] object-cover"
           />
         </div>
         <div className="container mx-auto px-4 relative z-10">
@@ -68,7 +68,7 @@ const Home = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Anytime Anywhere</h1>
             <p className="text-lg mb-8">Consult in 10 Indian Languages, anytime at just 399/min</p>
             <div className="mb-8">
-              <button className="bg-secondary hover:bg-secondary-dark text-white px-6 py-3 rounded-md font-medium transition duration-300">
+              <button className="bg-[#F5EB9A] text-black px-6 py-3 rounded-md font-medium transition duration-300">
                 Consult now
               </button>
             </div>
@@ -492,7 +492,7 @@ const Home = () => {
           </div>
         </div>
       </section> */}
-    </main>
+    </>
   );
 };
 
