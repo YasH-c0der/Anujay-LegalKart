@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/images/bb4dd9ffc1f3e8d3bff496e1710f5617b82bacd8.png";
+import image from "../assets/images/consultant.png";
 
 function Section_1() {
   return (
@@ -19,7 +19,7 @@ function Section_1() {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 248px;
+            gap: 98px;
             padding: 64px 24px;
             background: #fff;
             max-width: 1200px;
@@ -38,8 +38,8 @@ function Section_1() {
         }
 
         .hero_1-image img {
-            width: 249px;
-            height: 402px;
+            width: 675px;
+            height: 702px;
             /* object-fit: cover; */
             padding-bottom: 70px;
             border-radius: 16px;
@@ -54,7 +54,7 @@ function Section_1() {
         }
 
         .hero_1-content h1 {
-            font-size: 2.8rem;
+            font-size: 3.8rem;
             font-weight: 800;
             line-height: 1.18;
             margin: 0 0 32px 0;
@@ -123,13 +123,8 @@ function Section_1() {
                 padding: 40px 12px;
             }
 
-            .hero_1-image .circle {
-                width: 240px;
-                height: 240px;
-            }
-
             .hero_1-image img {
-                width: 140px;
+                width: 160px;
                 height: 180px;
             }
 
@@ -148,13 +143,8 @@ function Section_1() {
 
             }
 
-            .hero_1-image .circle {
-                width: 140px;
-                height: 140px;
-            }
-
             .hero_1-image img {
-                width: 115px;
+                width: 160px;
                 height: 169px;
                 padding-bottom: 31px;
             }
@@ -185,9 +175,7 @@ function Section_1() {
       </style>
       <section className="hero_1">
         <div className="hero_1-image">
-          <div className="circle">
-            <img src={image} alt="Businessperson" />
-          </div>
+            <img src={image} alt="image" />
         </div>
         <div className="hero_1-content">
           <h1>

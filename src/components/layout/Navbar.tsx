@@ -103,17 +103,17 @@ const Navbar = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-6">
-              <NavLink to="/" end className={navLinkClasses}>
+              {/* <NavLink to="/" end className={navLinkClasses}>
                 Home
               </NavLink>
               <NavLink to="/find-lawyer" className={navLinkClasses}>
                 Find Lawyer
-              </NavLink>
+              </NavLink> */}
               <div className="relative group">
                 <button
                   className={`hover:text-secondary font-medium flex items-center ${isScrolled ? "text-[#2b2b50]" : "text-white"}`}
                 >
-                  Legal Advice
+                  Property
                   <svg
                     className="ml-1 w-4 h-4"
                     fill="none"
@@ -195,8 +195,51 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
+              <div className="relative group">
+                <button
+                  className={`hover:text-secondary font-medium flex items-center ${isScrolled ? "text-[#2b2b50]" : "text-white"}`}
+                >
+                  Startup
+                  <svg
+                    className="ml-1 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                  <div className="py-1">
+                    <Link
+                      to="/agreements"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Agreements
+                    </Link>
+                    <Link
+                      to="/wills"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Wills
+                    </Link>
+                    <Link
+                      to="/trademarks"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Trademarks
+                    </Link>
+                  </div>
+                </div>
+              </div>
               <NavLink to="/pricing" className={navLinkClasses}>
-                Pricing
+                Challan
               </NavLink>
             </nav>
 
@@ -277,7 +320,7 @@ const Navbar = () => {
         >
           <div className="bg-white shadow-lg h-full">
             <nav className="flex flex-col">
-              <Link
+              {/* <Link
                 to="/"
                 className="text-gray-800 hover:text-[#33b5bb] font-medium py-3 px-4 border-b border-gray-200"
               >
@@ -288,14 +331,14 @@ const Navbar = () => {
                 className="text-gray-800 hover:text-[#33b5bb] font-medium py-3 px-4 border-b border-gray-200"
               >
                 Find Lawyer
-              </Link>
+              </Link> */}
 
               <div className="border-b border-gray-200">
                 <button
                   onClick={toggleLegalAdvice}
                   className="w-full flex justify-between items-center text-gray-800 hover:text-[#33b5bb] font-medium py-3 px-4"
                 >
-                  <span>Legal Advice</span>
+                  <span>Property</span>
                   <svg
                     className={`w-4 h-4 text-gray-500 transform transition-transform duration-300 ${legalAdviceOpen ? "rotate-180" : ""}`}
                     fill="none"
@@ -391,12 +434,62 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
+              <div className="border-b border-gray-200">
+                <button
+                  onClick={toggleDocuments}
+                  className="w-full flex justify-between items-center text-gray-800 hover:text-[#33b5bb] font-medium py-3 px-4"
+                >
+                  <span>Startup</span>
+                  <svg
+                    className={`w-4 h-4 text-gray-500 transform transition-transform duration-300 ${documentsOpen ? "rotate-180" : ""}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    documentsOpen
+                      ? "max-h-40 opacity-100 visible bg-gray-50"
+                      : "max-h-0 opacity-0 invisible"
+                  }`}
+                >
+                  <div className="py-2 px-8">
+                    <Link
+                      to="/agreements"
+                      className="block py-2 text-sm text-gray-700 hover:text-[#33b5bb]"
+                    >
+                      Agreements
+                    </Link>
+                    <Link
+                      to="/wills"
+                      className="block py-2 text-sm text-gray-700 hover:text-[#33b5bb]"
+                    >
+                      Wills
+                    </Link>
+                    <Link
+                      to="/trademarks"
+                      className="block py-2 text-sm text-gray-700 hover:text-[#33b5bb]"
+                    >
+                      Trademarks
+                    </Link>
+                  </div>
+                </div>
+              </div>
 
               <Link
                 to="/pricing"
                 className="text-gray-800 hover:text-[#33b5bb] font-medium py-3 px-4 border-b border-gray-200"
               >
-                Pricing
+                Challan
               </Link>
 
               <div className="flex flex-col space-y-3 p-4">
