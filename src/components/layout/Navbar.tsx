@@ -77,7 +77,7 @@ const Navbar = () => {
   const activeStyle = "text-secondary";
   const navLinkClasses = ({ isActive }: { isActive: boolean }) => `
     hover:text-secondary font-medium transition-colors
-    ${isActive ? activeStyle : isScrolled ? "text-[#2b2b50]" : "text-white"}
+    ${isActive ? activeStyle : isScrolled ? "text-white" : "text-white"}
   `;
 
   return (
@@ -85,7 +85,7 @@ const Navbar = () => {
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300
           
-          ${isScrolled ? "bg-white shadow-md" : "bg-[#07070d]"}
+          ${isScrolled ? "bg-black shadow-md" : "bg-[#181D2F]"}
           `}
       >
         <div className="container mx-auto px-4">
@@ -111,7 +111,7 @@ const Navbar = () => {
               </NavLink> */}
               <div className="relative group">
                 <button
-                  className={`hover:text-secondary font-medium flex items-center ${isScrolled ? "text-[#2b2b50]" : "text-white"}`}
+                  className={`hover:text-secondary font-medium flex items-center ${isScrolled ? "text-white" : "text-white"}`}
                 >
                   Property
                   <svg
@@ -154,7 +154,7 @@ const Navbar = () => {
               </div>
               <div className="relative group">
                 <button
-                  className={`hover:text-secondary font-medium flex items-center ${isScrolled ? "text-[#2b2b50]" : "text-white"}`}
+                  className={`hover:text-secondary font-medium flex items-center ${isScrolled ? "text-white" : "text-white"}`}
                 >
                   Documents
                   <svg
@@ -197,7 +197,7 @@ const Navbar = () => {
               </div>
               <div className="relative group">
                 <button
-                  className={`hover:text-secondary font-medium flex items-center ${isScrolled ? "text-[#2b2b50]" : "text-white"}`}
+                  className={`hover:text-secondary font-medium flex items-center ${isScrolled ? "text-white" : "text-white"}`}
                 >
                   Startup
                   <svg
@@ -253,7 +253,7 @@ const Navbar = () => {
               </Link>
               <Link
                 to="/login"
-                className={`hover:text-secondary ${isScrolled ? "text-[#2b2b50]" : "text-white"}`}
+                className={`hover:text-secondary ${isScrolled ? "text-white" : "text-white"}`}
               >
                 Login
               </Link>
@@ -263,7 +263,7 @@ const Navbar = () => {
             <div className="md:hidden flex items-center z-50">
               <button
                 onClick={toggleMenu}
-                className={`focus:outline-none ${isScrolled && !isOpen ? "text-[#2b2b50]" : "text-white"}`}
+                className={`focus:outline-none ${isScrolled && !isOpen ? "text-white" : "text-white"}`}
                 aria-label="Toggle Menu"
               >
                 {isOpen ? (
